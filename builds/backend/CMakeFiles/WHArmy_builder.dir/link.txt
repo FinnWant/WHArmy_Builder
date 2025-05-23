@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/WHArmy_builder.dir/main.cpp.o CMakeFiles/WHArmy_builder.dir/units.cpp.o -o WHArmy_builder 

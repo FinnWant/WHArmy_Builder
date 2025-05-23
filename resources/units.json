@@ -1,0 +1,56 @@
+[
+     {
+          "faction": "Space Marines",
+          "chapter": "Ultramarines",
+          "unit_name": "Tactical Squad",
+          "points": 100,
+          "stats": {
+               "movement": 6,
+               "weapon_skill": 3,
+               "ballistic_skill": 3,
+               "strength": 4,
+               "toughness": 4,
+               "wounds": 1,
+               "attacks": 1,
+               "leadership": 7,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Boltgun",
+                    "type": "Rapid Fire",
+                    "range": 24,
+                    "strength": 4,
+                    "armor_penetration": 0,
+                    "damage": 1
+               }
+          ]
+     },
+     {
+          "faction": "Orks",
+          "chapter": "",
+          "unit_name": "Boyz",
+          "points": 80,
+          "stats": {
+               "movement": 5,
+               "weapon_skill": 3,
+               "ballistic_skill": 5,
+               "strength": 4,
+               "toughness": 4,
+               "wounds": 1,
+               "attacks": 2,
+               "leadership": 6,
+               "save": 6
+          },
+          "options": [
+               {
+                    "name": "Slugga",
+                    "type": "Pistol",
+                    "range": 12,
+                    "strength": 4,
+                    "armor_penetration": 0,
+                    "damage": 1
+               }
+          ]
+     }
+]

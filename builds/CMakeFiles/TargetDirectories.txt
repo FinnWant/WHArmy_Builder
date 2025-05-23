@@ -1,0 +1,7 @@
+/home/student/PROJECTS/builds/CMakeFiles/edit_cache.dir
+/home/student/PROJECTS/builds/CMakeFiles/rebuild_cache.dir
+/home/student/PROJECTS/builds/_deps/json-build/CMakeFiles/edit_cache.dir
+/home/student/PROJECTS/builds/_deps/json-build/CMakeFiles/rebuild_cache.dir
+/home/student/PROJECTS/builds/backend/CMakeFiles/WHArmy_builder.dir
+/home/student/PROJECTS/builds/backend/CMakeFiles/edit_cache.dir
+/home/student/PROJECTS/builds/backend/CMakeFiles/rebuild_cache.dir
