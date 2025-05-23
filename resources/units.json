@@ -2,7 +2,61 @@
      {
           "faction": "Space Marines",
           "chapter": "Ultramarines",
-          "unit_name": "Tactical Squad",
+          "unit_name": "Captain",
+          "points": 90,
+          "stats": {
+               "movement": 6,
+               "weapon_skill": 2,
+               "ballistic_skill": 2,
+               "strength": 4,
+               "toughness": 4,
+               "wounds": 5,
+               "attacks": 4,
+               "leadership": 9,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Master-crafted Boltgun",
+                    "type": "Rapid Fire",
+                    "range": 24,
+                    "strength": 4,
+                    "armor_penetration": -1,
+                    "damage": 2
+               }
+          ]
+     },
+     {
+          "faction": "Space Marines",
+          "chapter": "Ultramarines",
+          "unit_name": "Lieutenant",
+          "points": 65,
+          "stats": {
+               "movement": 6,
+               "weapon_skill": 2,
+               "ballistic_skill": 3,
+               "strength": 4,
+               "toughness": 4,
+               "wounds": 4,
+               "attacks": 4,
+               "leadership": 8,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Bolt Pistol",
+                    "type": "Pistol",
+                    "range": 12,
+                    "strength": 4,
+                    "armor_penetration": 0,
+                    "damage": 1
+               }
+          ]
+     },
+     {
+          "faction": "Space Marines",
+          "chapter": "Ultramarines",
+          "unit_name": "Intercessor Squad",
           "points": 100,
           "stats": {
                "movement": 6,
@@ -10,19 +64,100 @@
                "ballistic_skill": 3,
                "strength": 4,
                "toughness": 4,
-               "wounds": 1,
-               "attacks": 1,
+               "wounds": 2,
+               "attacks": 2,
                "leadership": 7,
                "save": 3
           },
           "options": [
                {
-                    "name": "Boltgun",
+                    "name": "Bolt Rifle",
                     "type": "Rapid Fire",
-                    "range": 24,
+                    "range": 30,
+                    "strength": 4,
+                    "armor_penetration": -1,
+                    "damage": 1
+               }
+          ]
+     },
+     {
+          "faction": "Space Marines",
+          "chapter": "Ultramarines",
+          "unit_name": "Aggressor Squad",
+          "points": 120,
+          "stats": {
+               "movement": 5,
+               "weapon_skill": 3,
+               "ballistic_skill": 3,
+               "strength": 4,
+               "toughness": 5,
+               "wounds": 3,
+               "attacks": 3,
+               "leadership": 7,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Auto Boltstorm Gauntlets",
+                    "type": "Assault",
+                    "range": 18,
                     "strength": 4,
                     "armor_penetration": 0,
                     "damage": 1
+               }
+          ]
+     },
+     {
+          "faction": "Space Marines",
+          "chapter": "Ultramarines",
+          "unit_name": "Redemptor Dreadnought",
+          "points": 185,
+          "stats": {
+               "movement": 8,
+               "weapon_skill": 3,
+               "ballistic_skill": 3,
+               "strength": 7,
+               "toughness": 7,
+               "wounds": 13,
+               "attacks": 4,
+               "leadership": 8,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Macro Plasma Incinerator",
+                    "type": "Heavy",
+                    "range": 36,
+                    "strength": 8,
+                    "armor_penetration": -4,
+                    "damage": 3
+               }
+          ]
+     },
+     {
+          "faction": "Space Marines",
+          "chapter": "Ultramarines",
+          "unit_name": "Land Raider",
+          "points": 265,
+          "stats": {
+               "movement": 10,
+               "weapon_skill": 6,
+               "ballistic_skill": 3,
+               "strength": 8,
+               "toughness": 8,
+               "wounds": 16,
+               "attacks": 6,
+               "leadership": 9,
+               "save": 2
+          },
+          "options": [
+               {
+                    "name": "Twin Lascannon",
+                    "type": "Heavy",
+                    "range": 48,
+                    "strength": 9,
+                    "armor_penetration": -3,
+                    "damage": 6
                }
           ]
      },
@@ -49,6 +184,149 @@
                     "range": 12,
                     "strength": 4,
                     "armor_penetration": 0,
+                    "damage": 1
+               }
+          ]
+     },
+     {
+          "faction": "Orks",
+          "chapter": "",
+          "unit_name": "Nobz",
+          "points": 100,
+          "stats": {
+               "movement": 5,
+               "weapon_skill": 3,
+               "ballistic_skill": 5,
+               "strength": 5,
+               "toughness": 5,
+               "wounds": 2,
+               "attacks": 3,
+               "leadership": 7,
+               "save": 4
+          },
+          "options": [
+               {
+                    "name": "Big Choppa",
+                    "type": "Melee",
+                    "range": 0,
+                    "strength": 7,
+                    "armor_penetration": -1,
+                    "damage": 2
+               }
+          ]
+     },
+     {
+          "faction": "Orks",
+          "chapter": "",
+          "unit_name": "Warboss",
+          "points": 110,
+          "stats": {
+               "movement": 5,
+               "weapon_skill": 2,
+               "ballistic_skill": 5,
+               "strength": 6,
+               "toughness": 5,
+               "wounds": 5,
+               "attacks": 4,
+               "leadership": 8,
+               "save": 4
+          },
+          "options": [
+               {
+                    "name": "Power Klaw",
+                    "type": "Melee",
+                    "range": 0,
+                    "strength": 12,
+                    "armor_penetration": -3,
+                    "damage": 2
+               }
+          ]
+     },
+     {
+          "faction": "Orks",
+          "chapter": "",
+          "unit_name": "Gretchin",
+          "points": 40,
+          "stats": {
+               "movement": 5,
+               "weapon_skill": 5,
+               "ballistic_skill": 5,
+               "strength": 2,
+               "toughness": 2,
+               "wounds": 1,
+               "attacks": 1,
+               "leadership": 4,
+               "save": 6
+          },
+          "options": [
+               {
+                    "name": "Grot Blasta",
+                    "type": "Assault",
+                    "range": 12,
+                    "strength": 3,
+                    "armor_penetration": 0,
+                    "damage": 1
+               }
+          ]
+     },
+     {
+          "faction": "Orks",
+          "chapter": "",
+          "unit_name": "Deff Dread",
+          "points": 105,
+          "stats": {
+               "movement": 6,
+               "weapon_skill": 3,
+               "ballistic_skill": 5,
+               "strength": 6,
+               "toughness": 7,
+               "wounds": 8,
+               "attacks": 4,
+               "leadership": 7,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Dread Klaw",
+                    "type": "Melee",
+                    "range": 0,
+                    "strength": 12,
+                    "armor_penetration": -3,
+                    "damage": 3
+               },
+               {
+                    "name": "Kustom Mega-Blasta",
+                    "type": "Assault",
+                    "range": 24,
+                    "strength": 8,
+                    "armor_penetration": -3,
+                    "damage": 3
+               }
+          ]
+     },
+     {
+          "faction": "Orks",
+          "chapter": "",
+          "unit_name": "Battlewagon",
+          "points": 150,
+          "stats": {
+               "movement": 8,
+               "weapon_skill": 6,
+               "ballistic_skill": 5,
+               "strength": 7,
+               "toughness": 7,
+               "wounds": 14,
+               "attacks": 4,
+               "leadership": 7,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Big Shoota",
+                    "type": "Heavy",
+                    "range": 36,
+                    "strength": 5,
+                    "armor_penetration": -1,
                     "damage": 1
                }
           ]
