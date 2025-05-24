@@ -37,3 +37,7 @@ struct Unit {
 void from_json(const nlohmann::json &j, Option &o);
 void from_json(const nlohmann::json &j, Stats &s);
 void from_json(const nlohmann::json &j, Unit &u);
+// Declare to_json functions
+void to_json(nlohmann::json &j, const Option &o);
+void to_json(nlohmann::json &j, const Stats &s);
+void to_json(nlohmann::json &j, const Unit &u);

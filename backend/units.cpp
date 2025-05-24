@@ -35,3 +35,32 @@ void from_json(const json &j, Unit &u) {
   j.at("stats").get_to(u.stats);
   j.at("options").get_to(u.options);
 }
+
+void to_json(json &j, const Option &o) {
+  j = json{{"name", o.name},
+           {"type", o.type},
+           {"range", o.range},
+           {"strength", o.strength},
+           {"armor_penetration", o.armor_penetration},
+           {"damage", o.damage}};
+}
+
+// Define to_json for Stats
+void to_json(json &j, const Stats &s) {
+  j = json{{"movement", s.movement},
+           {"weapon_skill", s.weapon_skill},
+           {"ballistic_skill", s.ballistic_skill},
+           {"strength", s.strength},
+           {"toughness", s.toughness},
+           {"wounds", s.wounds},
+           {"attacks", s.attacks},
+           {"leadership", s.leadership},
+           {"save", s.save}};
+}
+
+// Define to_json for Unit
+void to_json(json &j, const Unit &u) {
+  j = json{{"faction", u.faction},     {"chapter", u.chapter},
+           {"unit_name", u.unit_name}, {"points", u.points},
+           {"stats", u.stats},         {"options", u.options}};
+}

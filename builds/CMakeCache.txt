@@ -23,6 +23,16 @@ ArmyBuilder_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 ArmyBuilder_SOURCE_DIR:STATIC=/home/student/PROJECTS
 
+Boost_DATE_TIME_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.83.0
+
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=/usr/include
+
+Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
@@ -261,6 +271,51 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Enable to build RPM source packages
+CPACK_SOURCE_RPM:BOOL=OFF
+
+//Enable to build TBZ2 source packages
+CPACK_SOURCE_TBZ2:BOOL=ON
+
+//Enable to build TGZ source packages
+CPACK_SOURCE_TGZ:BOOL=ON
+
+//Enable to build TXZ source packages
+CPACK_SOURCE_TXZ:BOOL=ON
+
+//Enable to build TZ source packages
+CPACK_SOURCE_TZ:BOOL=ON
+
+//Enable to build ZIP source packages
+CPACK_SOURCE_ZIP:BOOL=OFF
+
+//Combine all headers into one
+CROW_AMALGAMATE:BOOL=OFF
+
+//Build the examples in the project
+CROW_BUILD_EXAMPLES:BOOL=OFF
+
+//Build the tests in the project
+CROW_BUILD_TESTS:BOOL=OFF
+
+//Enable compression capabilities (ZLIB)
+CROW_ENABLE_COMPRESSION:BOOL=OFF
+
+//Enable SSL capabilities (OpenSSL)
+CROW_ENABLE_SSL:BOOL=OFF
+
+//Add install step for Crow
+CROW_INSTALL:BOOL=ON
+
+//Value Computed by CMake
+Crow_BINARY_DIR:STATIC=/home/student/PROJECTS/builds/_deps/crow-build
+
+//Value Computed by CMake
+Crow_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Crow_SOURCE_DIR:STATIC=/home/student/PROJECTS/builds/_deps/crow-src
+
 //Directory under which to collect all populated content
 FETCHCONTENT_BASE_DIR:PATH=/home/student/PROJECTS/builds/_deps
 
@@ -272,11 +327,18 @@ FETCHCONTENT_FULLY_DISCONNECTED:BOOL=OFF
 FETCHCONTENT_QUIET:BOOL=ON
 
 //When not empty, overrides where to find pre-populated content
+// for crow
+FETCHCONTENT_SOURCE_DIR_CROW:PATH=
+
+//When not empty, overrides where to find pre-populated content
 // for json
 FETCHCONTENT_SOURCE_DIR_JSON:PATH=
 
 //Enables UPDATE_DISCONNECTED behavior for all content population
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
+
+//Enables UPDATE_DISCONNECTED behavior just for population of crow
+FETCHCONTENT_UPDATES_DISCONNECTED_CROW:BOOL=OFF
 
 //Enables UPDATE_DISCONNECTED behavior just for population of json
 FETCHCONTENT_UPDATES_DISCONNECTED_JSON:BOOL=OFF
@@ -314,6 +376,15 @@ JSON_MultipleHeaders:BOOL=ON
 //Include as system headers (skip for clang-tidy).
 JSON_SystemInclude:BOOL=OFF
 
+//The directory containing a CMake configuration file for boost_date_time.
+boost_date_time_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_date_time-1.83.0
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_headers-1.83.0
+
+//The directory containing a CMake configuration file for boost_system.
+boost_system_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.83.0
+
 //Value Computed by CMake
 nlohmann_json_BINARY_DIR:STATIC=/home/student/PROJECTS/builds/_deps/json-build
 
@@ -328,6 +399,8 @@ nlohmann_json_SOURCE_DIR:STATIC=/home/student/PROJECTS/builds/_deps/json-src
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -390,6 +463,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/student/PROJECTS
@@ -444,7 +519,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -489,6 +564,22 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_RPM
+CPACK_SOURCE_RPM-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TBZ2
+CPACK_SOURCE_TBZ2-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TGZ
+CPACK_SOURCE_TGZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TXZ
+CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_TZ
+CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CPACK_SOURCE_ZIP
+CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake][cfound components: system date_time ][v1.83.0(1.64)]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 NLOHMANN_JSON_CONFIG_INSTALL_DIR:INTERNAL=share/cmake/nlohmann_json
@@ -496,4 +587,10 @@ NLOHMANN_JSON_CONFIG_INSTALL_DIR:INTERNAL=share/cmake/nlohmann_json
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
+//ADVANCED property for variable: boost_date_time_DIR
+boost_date_time_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_system_DIR
+boost_system_DIR-ADVANCED:INTERNAL=1
 

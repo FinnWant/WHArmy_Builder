@@ -44,6 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/student/PROJECTS/builds/_deps/crow-build/cmake_install.cmake")
   include("/home/student/PROJECTS/builds/_deps/json-build/cmake_install.cmake")
   include("/home/student/PROJECTS/builds/backend/cmake_install.cmake")
 
