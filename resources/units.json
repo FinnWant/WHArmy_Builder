@@ -330,5 +330,167 @@
                     "damage": 1
                }
           ]
+     },
+     {
+          "faction": "Necrons",
+          "chapter": "",
+          "unit_name": "Warrior",
+          "points": 80,
+          "stats": {
+               "movement": 5,
+               "weapon_skill": 4,
+               "ballistic_skill": 4,
+               "strength": 4,
+               "toughness": 4,
+               "wounds": 1,
+               "attacks": 1,
+               "leadership": 10,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Gauss Flayer",
+                    "type": "Rapid Fire",
+                    "range": 24,
+                    "strength": 4,
+                    "armor_penetration": -1,
+                    "damage": 1
+               }
+          ]
+     }
+     {
+          "faction": "Necrons",
+          "chapter": "",
+          "unit_name": "Immortal",
+          "points": 100,
+          "stats": {
+               "movement": 5,
+               "weapon_skill": 4,
+               "ballistic_skill": 4,
+               "strength": 5,
+               "toughness": 5,
+               "wounds": 1,
+               "attacks": 1,
+               "leadership": 10,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Tesla Carbine",
+                    "type": "Rapid Fire",
+                    "range": 24,
+                    "strength": 5,
+                    "armor_penetration": -1,
+                    "damage": 1
+               }
+          ]
+     }
+     {
+          "faction": "Necrons",
+          "chapter": "",
+          "unit_name": "Lychguard",
+          "points": 120,
+          "stats": {
+               "movement": 5,
+               "weapon_skill": 2,
+               "ballistic_skill": 4,
+               "strength": 5,
+               "toughness": 5,
+               "wounds": 2,
+               "attacks": 2,
+               "leadership": 10,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Hyperphase Sword",
+                    "type": "Melee",
+                    "range": 0,
+                    "strength": 5,
+                    "armor_penetration": -3,
+                    "damage": 1
+               }
+          ]
+     }
+     {
+          "faction": "Necrons",
+          "chapter": "",
+          "unit_name": "Cryptek",
+          "points": 85,
+          "stats": {
+               "movement": 5,
+               "weapon_skill": 4,
+               "ballistic_skill": 4,
+               "strength": 4,
+               "toughness": 5,
+               "wounds": 5,
+               "attacks": 2,
+               "leadership": 10,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Staff of Light",
+                    "type": "Assault",
+                    "range": 12,
+                    "strength": 5,
+                    "armor_penetration": -1,
+                    "damage": 1
+               }
+          ]
+     }
+     {
+          "faction": "Necrons",
+          "chapter": "",
+          "unit_name": "Monolith",
+          "points": 250,
+          "stats": {
+               "movement": 10,
+               "weapon_skill": 6,
+               "ballistic_skill": 3,
+               "strength": 8,
+               "toughness": 8,
+               "wounds": 20,
+               "attacks": 4,
+               "leadership": 10,
+               "save": 2
+          },
+          "options": [
+               {
+                    "name": "Gauss Flux Arc",
+                    "type": "Heavy",
+                    "range": 24,
+                    "strength": 6,
+                    "armor_penetration": -2,
+                    "damage": 1
+               }
+          ]
+     }
+     {
+          "faction": "Necrons",
+          "chapter": "",
+          "unit_name": "Doomsday Ark",
+          "points": 200,
+          "stats": {
+               "movement": 10,
+               "weapon_skill": 6,
+               "ballistic_skill": 3,
+               "strength": 7,
+               "toughness": 7,
+               "wounds": 14,
+               "attacks": 4,
+               "leadership": 10,
+               "save": 3
+          },
+          "options": [
+               {
+                    "name": "Doomsday Cannon",
+                    "type": "Heavy",
+                    "range": 48,
+                    "strength": 10,
+                    "armor_penetration": -4,
+                    "damage": 3
+               }
+          ]
      }
 ]
